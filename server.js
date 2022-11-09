@@ -55,6 +55,8 @@ app.locals.songs = [
     {
         id: 5,
         albumCover: 'https://placekitten.com/200/300',
+        album: 'Kiasmos',
+        releaseDate: '2014',
         artist: 'Kiasmos',
         songTitle: 'Looped',
         genre: 'dance/electronic'
@@ -63,8 +65,8 @@ app.locals.songs = [
     {
         id: 6,
         albumCover: 'https://placekitten.com/200/300',
-        album: 'Kiasmos',
-        releaseDate: '2014',
+        album: 'Thousand Peaces',
+        releaseDate: '2017',
         artist: 'Absofacto, NITESHIFT',
         songTitle: 'Dissolve',
         genre: 'experimental pop'
