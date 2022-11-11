@@ -1,11 +1,12 @@
 const express = require("express")
-const cors = require('cors')
 const app = express()
+const cors = require('cors')
 
 app.use(cors())
 app.use(express.json())
 
 app.set('port', process.env.PORT || 3003)
+
 app.listen(app.get('port'), () => {
     console.log(`${app.locals.title} is now running on ${app.get('port')}!`)
   })
@@ -301,7 +302,7 @@ app.locals.songs = [
     }
 ]
 
-app.get('/songs', (request, response) => {
+app.get('/api/v1/songs', (request, response) => {
     response.status(200).json(app.locals.songs);
   });
   
