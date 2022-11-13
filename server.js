@@ -135,7 +135,7 @@ app.locals.songs = [
     },
     {
         id: 13,
-        albumCover: 'https://placekitten.com/200/300',
+        albumCover: 'https://i.scdn.co/image/ab67616d00001e02de17cfccf8390d5252c7e6c1',
         album: 'null',
         releaseDate: 'null',
         artist: 'SOUNDSBYLAITUE',
@@ -257,7 +257,7 @@ app.locals.songs = [
     },
     {
         id: 26,
-        albumCover: 'https://placekitten.com/200/300',
+        albumCover: 'https://i.scdn.co/image/ab67616d0000b273cc1055b1a57d1005a0ca5649',
         album: 'Warm Time',
         releaseDate: '2014',
         artist: 'iLLFlip',
@@ -303,6 +303,8 @@ app.locals.songs = [
 ]
 
 app.get('/api/v1/songs', (request, response) => {
-    response.status(200).json(app.locals.songs);
+    const songs = app.locals.songs
+
+    response.status(200).json({ songs });
   });
   
