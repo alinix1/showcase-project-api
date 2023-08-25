@@ -368,5 +368,6 @@ app.locals.songs = [
 app.get("/api/v1/songs", (request, response) => {
   const songs = app.locals.songs;
 
+  response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
   response.status(200).json({ songs });
 });
