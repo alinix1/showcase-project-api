@@ -371,3 +371,12 @@ app.get("/api/v1/songs", (request, response) => {
   response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
   response.status(200).json({ songs });
 });
+
+app.get("/api/v1/songs/:id", (request, response) => {
+  const id = parseInt(request.params.id);
+  const findSongs = app.locals.songs.find((song) => song.id === id);
+  app.locals.songs = findSongs;
+
+  response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+  response.status(200).json(app.locals.songs);
+});
