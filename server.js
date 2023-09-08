@@ -374,9 +374,13 @@ app.get("/api/v1/songs", (request, response) => {
 
 app.get("/api/v1/songs/:id", (request, response) => {
   const id = parseInt(request.params.id);
-  const findSongs = app.locals.songs.find((song) => song.id === id);
-  app.locals.songs = findSongs;
+  const foundSong = app.locals.songs.find((song) => song.id === id);
 
-  response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-  response.status(200).json(app.locals.songs);
+  if (!foundSong) {
+    return response
+      .status(404)
+      .json({ message: `Sorry, no song found with an id of ${id}` });
+  }
+
+  response.status(200).json(foundSong);
 });
