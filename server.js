@@ -273,25 +273,26 @@ app.locals.songs = [
   {
     id: 23,
     albumCover:
-      "https://chillhop.com/wp-content/uploads/2022/04/73f23095038f6f023083520706f3e5345f5dd682-scaled.jpg",
-    album: "Chillhop Essentials Summer 2022",
-    releaseDate: "2022",
-    artist: "Mommy",
-    songTitle: "Jellyfish-Lamp",
-    songDetails: "sorry, we couldn't find any details on this artist",
-    genre: "unknown",
+      "https://upload.wikimedia.org/wikipedia/en/0/04/Floating_Points_-_Crush.png",
+    album: "Crush",
+    releaseDate: "2019",
+    artist: "Floating Points",
+    songTitle: "Bias",
+    songDetails:
+      "Crush received positive reception upon release. At Metacritic, which assigns a normalized rating out of 100 to reviews from music publications, the album received an average score of 81 based on 16 reviews, indicating 'universal acclaim'. Shawn Reynaldo of Pitchfork awarded the album 'Best New Music', saying that the project is 'an album of mischievous, melodic, stripped-down electronic music.'",
+    genre: "Electronic",
   },
   {
     id: 24,
     albumCover:
-      "https://www.radioswissjazz.ch/common/images/booklets/web/600/000/009/9384.jpg",
-    album: "Duke Ellington, John Coltrane",
-    releaseDate: "January 1963",
-    artist: "Duke Ellington, John Coltrane",
-    songTitle: "My Little Brown Book",
+      "https://upload.wikimedia.org/wikipedia/en/e/e9/Musichastherighttochildren.jpg",
+    album: "Music Has the Right to Children",
+    releaseDate: "1998",
+    artist: "Boards of Canada",
+    songTitle: "Roygbiv",
     songDetails:
-      "Edward Kennedy 'Duke' Ellington (April 29, 1899 - May 24, 1974) was an American jazz pianist, composer, and leader of his eponymous jazz orchestra from 1923 through the rest of his life. Born and raised in Washington, D.C., Ellington was based in New York City from the mid-1920s and gained a national profile through his orchestra's appearances at the Cotton Club in Harlem. A master at writing miniatures for the three-minute 78 rpm recording format, Ellington wrote or collaborated on more than one thousand compositions; his extensive body of work is the largest recorded personal jazz legacy, and many of his pieces have become standards. He also recorded songs written by his bandsmen, such as Juan Tizol's 'Caravan', which brought a Spanish tinge to big band jazz.",
-    genre: "jazz",
+      "The members of Boards of Canada, brothers Michael Sandison and Marcus Eoin, had been creating music together as early as 1981, layering synths over cassette recordings of shortwave radio. The album received widespread acclaim upon release. In 2014, AllMusic called it 'a landmark for electronic listening music that was widely copied.' Fact called it 'an adult meditation on childhood, concerned with play, naïveté and nostalgia, all tinted with rosy pastoralism,' but 'also devilishly subtle, intricate and emotionally mature.'",
+    genre: "electronic, downtempo, ambient",
   },
   {
     id: 25,
